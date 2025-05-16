@@ -23,9 +23,14 @@ const EverythingYouLove = () => {
                 </div>
             </div>
             <h1>Everything You Love About Coffee</h1>
-            <div className="lineOne" />
-            <img src="../../../img/everythingYouLove/Beans.svg" alt="beans" />
-            <div className="lineTwo" />
+            <div className="lines">
+                <div className="lineOne" />
+                <img
+                    src="../../../img/everythingYouLove/Beans.svg"
+                    alt="beans"
+                />
+                <div className="lineTwo" />
+            </div>
             <h2 className="firsth2">
                 We makes every day full of energy and taste
             </h2>

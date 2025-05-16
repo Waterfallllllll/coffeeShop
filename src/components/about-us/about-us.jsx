@@ -4,9 +4,14 @@ const AboutUs = () => {
     return (
         <section className="aboutUs">
             <h2 className="header">About Us</h2>
-            <img src="../../../img/aboutUs/Beansblack.svg" alt="beansblack" />
-            <div className="lineOne"></div>
-            <div className="lineTwo"></div>
+            <div className="lines">
+                <img
+                    src="../../../img/aboutUs/Beansblack.svg"
+                    alt="beansblack"
+                />
+                <div className="lineOne"></div>
+                <div className="lineTwo"></div>
+            </div>
             <div className="text">
                 Extremity sweetness difficult behaviour he of. On disposal of as
                 landlord horrible. Afraid at highly months do things on at.

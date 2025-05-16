@@ -14,31 +14,37 @@
         letter-spacing: 0%;
     }
 
-    img {
-        position: absolute;
+    .lines {
+        width: 200px;
+        position: relative;
         left: 50%;
         transform: translateX(-50%);
-        margin-top: 20px;
-    }
+        img {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-top: 20px;
+        }
 
-    .lineOne {
-        /* Line */
-        position: absolute;
-        width: 60px;
-        height: 0;
-        left: 853px;
-        border: 1px solid rgb(0, 0, 0);
-        top: 70px;
-    }
+        .lineOne {
+            /* Line */
+            position: absolute;
+            width: 60px;
+            height: 0;
+            left: 0px;
+            top: 35px;
+            border: 1px solid rgb(0, 0, 0);
+        }
 
-    .lineTwo {
-        /* Line */
-        position: absolute;
-        width: 60px;
-        height: 0;
-        left: 992px;
-        border: 1px solid rgb(0, 0, 0);
-        top: 70px;
+        .lineTwo {
+            /* Line */
+            position: absolute;
+            width: 60px;
+            height: 0;
+            left: 139px;
+            border: 1px solid rgb(0, 0, 0);
+            top: 35px;
+        }
     }
 
     .text {
