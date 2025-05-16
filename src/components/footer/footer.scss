@@ -1,0 +1,60 @@
+.footer {
+    min-height: 94px;
+    .links {
+        margin-top: 52px;
+        .linksFirst {
+            width: 355px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+
+            .linksImg {
+                position: absolute;
+                left: -33px;
+                bottom: 4px;
+            }
+            .linksText {
+                color: rgb(0, 0, 0);
+                font-family: Merienda;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 17px;
+                letter-spacing: 0%;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .lines {
+        position: relative;
+        img {
+            position: absolute;
+            left: 49.5%;
+            transform: translateX(-50%);
+            top: 31px;
+        }
+
+        .lineOne {
+            /* Line */
+            position: absolute;
+            width: 60px;
+            height: 0;
+            left: 842px;
+            border: 1px solid rgb(0, 0, 0);
+            top: 46px;
+        }
+
+        .lineTwo {
+            /* Line */
+            position: absolute;
+            width: 60px;
+            height: 0;
+            left: 981px;
+            border: 1px solid rgb(0, 0, 0);
+            top: 46px;
+        }
+    }
+}

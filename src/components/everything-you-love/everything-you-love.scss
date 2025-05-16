@@ -1,0 +1,140 @@
+.promo {
+    background: url("../../../img/everythingYouLove/Main_bg.jpeg") no-repeat 50% /
+        cover;
+    min-height: 915px;
+    padding-top: 30px;
+    position: relative;
+
+    h1 {
+        color: rgb(255, 255, 255);
+        font-family: Merienda;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 58px;
+        letter-spacing: 0%;
+        text-align: center;
+        margin-top: 136px;
+    }
+
+    img {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 4px;
+    }
+
+    .lineOne {
+        position: absolute;
+        width: 60px;
+        top: 241px;
+        height: 0;
+        left: 887px;
+        transform: translateX(-50%);
+        border: 1px solid rgb(255, 255, 255);
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .lineTwo {
+        position: absolute;
+        width: 60px;
+        top: 241px;
+        height: 0;
+        left: 1030px;
+        transform: translateX(-50%);
+        border: 1px solid rgb(255, 255, 255);
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .firsth2 {
+        color: rgb(255, 255, 255);
+        font-family: Merienda;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 35px;
+        letter-spacing: 0%;
+        text-align: center;
+        margin-top: 60px;
+    }
+
+    .secondh2 {
+        color: rgb(255, 255, 255);
+        font-family: Merienda;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 35px;
+        letter-spacing: 0%;
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    button {
+        position: absolute;
+        box-sizing: border-box;
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 3px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        background: rgba(196, 196, 196, 0);
+        width: 120px;
+        height: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 371px;
+        color: rgb(255, 255, 255);
+        font-family: Merienda;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+        letter-spacing: 0%;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .links {
+        position: relative;
+        margin-top: 30px;
+        margin-left: 149px;
+        .linksFirst {
+            position: absolute;
+            width: 400px;
+            .linksHouse {
+                position: absolute;
+                color: rgb(255, 255, 255);
+                font-family: Merienda;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 17px;
+                letter-spacing: 0%;
+                left: 100px;
+                text-decoration: none;
+            }
+            .linksImg {
+                position: absolute;
+                left: 80px;
+                top: -25px;
+            }
+            .linksOur {
+                position: absolute;
+                color: rgb(255, 255, 255);
+                font-family: Merienda;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 17px;
+                letter-spacing: 0%;
+                left: 205px;
+                text-decoration: none;
+            }
+
+            .linksPleasure {
+                position: absolute;
+                color: rgb(255, 255, 255);
+                font-family: Merienda;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 17px;
+                letter-spacing: 0%;
+                left: 295px;
+                text-decoration: none;
+            }
+        }
+    }
+}

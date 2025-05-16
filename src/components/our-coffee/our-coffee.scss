@@ -1,0 +1,72 @@
+.ourCoffee {
+    position: relative;
+    min-height: 260px;
+    background: url("../../../img/ourCoffee/coffeeShop.jpeg") no-repeat 50% /
+        cover;
+
+    &__header {
+        position: absolute;
+        top: 130px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: rgb(255, 255, 255);
+        font-family: Merienda;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 58px;
+        letter-spacing: 0%;
+    }
+
+    &__links {
+        position: absolute;
+        top: 50px;
+        left: 149px;
+
+        &-first {
+            position: absolute;
+            width: 400px;
+        }
+
+        &-house {
+            position: absolute;
+            color: rgb(255, 255, 255);
+            font-family: Merienda;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 17px;
+            letter-spacing: 0%;
+            left: 100px;
+            text-decoration: none;
+        }
+
+        &-img {
+            position: absolute;
+            left: 65px;
+            top: -20px;
+        }
+
+        &-our {
+            position: absolute;
+            color: rgb(255, 255, 255);
+            font-family: Merienda;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 17px;
+            letter-spacing: 0%;
+            left: 205px;
+            text-decoration: none;
+        }
+
+        &-pleasure {
+            position: absolute;
+            color: rgb(255, 255, 255);
+            font-family: Merienda;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 17px;
+            letter-spacing: 0%;
+            left: 295px;
+            text-decoration: none;
+        }
+    }
+}

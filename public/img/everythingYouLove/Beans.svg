@@ -1,0 +1,26 @@
+<svg width="37.302002" height="37.302002" viewBox="0 0 37.302 37.302" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<filter id="filter_4_68_dd" x="0.000000" y="0.000000" width="37.302002" height="37.302002" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+			<feOffset dx="0" dy="4"/>
+			<feGaussianBlur stdDeviation="1.33333"/>
+			<feComposite in2="hardAlpha" operator="out" k2="-1" k3="1"/>
+			<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+			<feBlend mode="normal" in2="BackgroundImageFix" result="effect_dropShadow_1"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="effect_dropShadow_1" result="shape"/>
+		</filter>
+		<clipPath id="clip4_50">
+			<rect id="coffee-beans (1)" rx="0.000000" width="28.302002" height="28.302002" transform="translate(4.500000 0.500000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<g filter="url(#filter_4_68_dd)">
+		<rect id="coffee-beans (1)" rx="0.000000" width="28.302002" height="28.302002" transform="translate(4.500000 0.500000)" fill="#FFFFFF" fill-opacity="0"/>
+		<g clip-path="url(#clip4_50)">
+			<path id="Vector" d="M9.38 26.55C8.03 24.16 8.95 20.41 11.75 17.61C14.93 14.43 19.33 13.67 21.58 15.92C21.58 15.92 21.58 15.92 21.59 15.93C21.14 17.23 19.71 20.02 15.42 21.52C11.48 22.9 9.97 25.09 9.38 26.55ZM20.26 19.59C19.23 20.61 17.77 21.62 15.71 22.35C11.51 23.82 10.34 26.22 10.01 27.39C10.03 27.4 10.04 27.42 10.06 27.44C12.3 29.68 16.7 28.92 19.88 25.74C22.71 22.91 23.62 19.12 22.21 16.73C21.87 17.53 21.28 18.56 20.26 19.59ZM11.58 9.24C16.11 9.64 18.56 7.69 19.51 6.69C19.51 6.68 19.5 6.68 19.5 6.67C18.38 3.7 14.06 2.58 9.85 4.17C6.15 5.57 3.76 8.6 4.01 11.33C5.15 10.25 7.43 8.88 11.58 9.24ZM13.91 14.93C17.66 13.52 20.05 10.43 19.74 7.68C19.1 8.26 18.14 8.96 16.79 9.47C15.43 9.99 13.68 10.3 11.5 10.11C7.08 9.72 5.02 11.44 4.24 12.36C4.25 12.38 4.25 12.4 4.26 12.42C5.38 15.4 9.7 16.52 13.91 14.93ZM27.02 8.73C29.74 5.09 29.37 1.98 29.01 0.64C29.01 0.64 29 0.64 29 0.64C25.88 0.03 22.66 3.12 21.8 7.54C21.04 11.43 22.37 15.05 24.83 16.27C24.5 14.74 24.53 12.07 27.02 8.73ZM29.98 0.97C30.14 1.82 30.23 3.01 29.95 4.42C29.68 5.85 29.03 7.5 27.72 9.26C25.07 12.82 25.44 15.47 25.82 16.62C25.84 16.62 25.86 16.63 25.88 16.63C29 17.24 32.22 14.15 33.08 9.74C33.85 5.81 32.48 2.15 29.98 0.97Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+		</g>
+	</g>
+</svg>

@@ -1,0 +1,56 @@
+.aboutUs {
+    background: rgb(255, 255, 255);
+    min-height: 520px;
+    position: relative;
+
+    .header {
+        margin-top: 80px;
+        text-align: center;
+        color: rgb(0, 0, 0);
+        font-family: Merienda;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 35px;
+        letter-spacing: 0%;
+    }
+
+    img {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 20px;
+    }
+
+    .lineOne {
+        /* Line */
+        position: absolute;
+        width: 60px;
+        height: 0;
+        left: 853px;
+        border: 1px solid rgb(0, 0, 0);
+        top: 70px;
+    }
+
+    .lineTwo {
+        /* Line */
+        position: absolute;
+        width: 60px;
+        height: 0;
+        left: 992px;
+        border: 1px solid rgb(0, 0, 0);
+        top: 70px;
+    }
+
+    .text {
+        width: 589px;
+        margin: 0 auto;
+        margin-top: 86px;
+        color: rgb(0, 0, 0);
+        font-family: Merienda;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+}

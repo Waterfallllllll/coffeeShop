@@ -1,0 +1,84 @@
+.ourBest {
+    background: url("../../../img/ourBest/ourBestBg.jpeg") no-repeat 50% / cover;
+    min-height: 495px;
+    position: relative;
+    .header {
+        position: absolute;
+        color: rgb(0, 0, 0);
+        font-family: Merienda;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 35px;
+        letter-spacing: 0%;
+        text-align: center;
+        top: 80px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .formOne {
+        /* Rectangle 2 */
+        position: absolute;
+        width: 220px;
+        height: 240px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 144px;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.65);
+    }
+
+    .formTwo {
+        /* Rectangle 2 */
+        position: absolute;
+        width: 220px;
+        height: 240px;
+        left: 29%;
+        top: 144px;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.65);
+    }
+
+    .formThree {
+        /* Rectangle 2 */
+        position: absolute;
+        width: 220px;
+        height: 240px;
+        left: 59.5%;
+        top: 144px;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.65);
+    }
+
+    .formImg {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 22px;
+    }
+
+    .formText {
+        position: absolute;
+        color: rgb(0, 0, 0);
+        font-family: Merienda;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0%;
+        width: 177px;
+        top: 165px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .formCost {
+        position: absolute;
+        bottom: 22px;
+        right: 20px;
+        color: rgb(0, 0, 0);
+        font-family: Merienda;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+        letter-spacing: 0%;
+    }
+}
