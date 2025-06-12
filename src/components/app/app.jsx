@@ -11,6 +11,7 @@ import OurBest from "../our-best/our-best";
 import Footer from "../footer/footer";
 import OurCoffee from "../our-coffee/our-coffee";
 import AboutOurBeans from "../about-our-beans/about-our-beans";
+import CardMenu from "../card-menu/card-menu";
 
 import "./app.scss";
 
@@ -33,6 +34,7 @@ class App extends Component {
                         <Route exact path="/ourCoffee">
                             <OurCoffee></OurCoffee>
                             <AboutOurBeans></AboutOurBeans>
+                            <CardMenu></CardMenu>
                         </Route>
                         <Route exact path="/forYourPleasure"></Route>
                     </Switch>

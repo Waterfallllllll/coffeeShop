@@ -29,6 +29,7 @@ const AboutOurBeans = () => {
                         it went <br /> is song that held help face.
                     </p>
                 </div>
+                <div className="aboutOurBeans__bigLine"></div>
             </div>
         </section>
     );
