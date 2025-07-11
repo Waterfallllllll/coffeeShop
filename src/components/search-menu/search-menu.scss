@@ -1,0 +1,139 @@
+.cardMenu {
+    margin-bottom: 80px;
+    &__filter {
+        width: 693px;
+        margin: 0 auto;
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__search {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 284px;
+        height: 30px;
+    }
+
+    &__choiseMenu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 326px;
+    }
+
+    &__text {
+        color: rgb(0, 0, 0);
+        font-family: Merienda;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+
+    &__input {
+        border-radius: 4px;
+        box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.25);
+        background: rgb(255, 255, 255);
+        width: 180px;
+        height: 30px;
+        text-align: center;
+        line-height: 17px;
+        font-weight: 400;
+        font-size: 12px;
+        font-family: Merienda;
+        border: none;
+    }
+
+    &__buttonFilter {
+        border-radius: 4px 0px 0px 4px;
+        box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.25);
+        background: rgb(255, 255, 255);
+        border: none;
+        height: 30px;
+        width: 75px;
+        color: rgb(0, 0, 0);
+        font-family: Merienda;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0%;
+        text-align: center;
+        cursor: pointer;
+
+        &--active {
+            background-color: #4e342e; /* или #6f4e37 */
+            color: white;
+            border: none;
+        }
+    }
+
+    &__cardGrid {
+        width: 802px;
+        margin: 0 auto;
+        margin-top: 61px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 60px;
+    }
+
+    &__card {
+        position: relative;
+        border-radius: 4px 0px 0px 4px;
+        box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.25);
+        background: rgb(255, 255, 255);
+        width: 220px;
+        height: 260px;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    &__img {
+        position: absolute;
+        top: 37px;
+        left: 26px;
+    }
+
+    &__title {
+        position: absolute;
+        top: 164px;
+        color: rgb(0, 0, 0);
+        font-family: Merienda;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 172px;
+    }
+
+    &__country {
+        position: absolute;
+        top: 190px;
+        color: rgb(0, 0, 0);
+        font-family: Merienda;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0%;
+        text-align: right;
+        left: 125px;
+        width: 70px;
+    }
+
+    &__price {
+        position: absolute;
+        top: 215px;
+        left: 158px;
+        color: rgb(0, 0, 0);
+        font-family: Merienda;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+}

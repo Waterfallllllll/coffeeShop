@@ -11,16 +11,80 @@ import OurBest from "../our-best/our-best";
 import Footer from "../footer/footer";
 import OurCoffee from "../our-coffee/our-coffee";
 import AboutOurBeans from "../about-our-beans/about-our-beans";
+import SearchMenu from "../search-menu/search-menu";
 import CardMenu from "../card-menu/card-menu";
+import AboutIt from "../about-it/about-it";
 
 import "./app.scss";
 
 class App extends Component {
     constructor(props) {
         super(props);
+        this.state = {
+            data: [
+                {
+                    title: "AROMISTICO Coffee 1 kg",
+                    country: "Brazil",
+                    price: 6.99,
+                    id: 1,
+                },
+                {
+                    title: "AROMISTICO Coffee 1 kg",
+                    country: "Kenya",
+                    price: 6.99,
+                    id: 2,
+                },
+                {
+                    title: "AROMISTICO Coffee 1 kg",
+                    country: "Columbia",
+                    price: 6.99,
+                    id: 3,
+                },
+                {
+                    title: "AROMISTICO Coffee 1 kg",
+                    country: "Brazil",
+                    price: 6.99,
+                    id: 4,
+                },
+                {
+                    title: "AROMISTICO Coffee 1 kg",
+                    country: "Brazil",
+                    price: 6.99,
+                    id: 5,
+                },
+                {
+                    title: "AROMISTICO Coffee 1 kg",
+                    country: "Brazil",
+                    price: 6.99,
+                    id: 6,
+                },
+            ],
+            term: "",
+        };
     }
 
+    onUpdateSearch = (term) => {
+        this.setState({ term: term });
+    };
+
+    searchEmp = (items, term) => {
+        if (term.length === 0) {
+            return items;
+        }
+
+        return items.filter((item) => {
+            return item.country.indexOf(term) > -1;
+        });
+    };
+
+    onChangeCountry = (data) => {
+        this.setState({ data });
+    };
+
     render() {
+        const { data, term } = this.state;
+        const visibleData = this.searchEmp(data, term);
+
         return (
             <Router>
                 <div className="app">
@@ -34,7 +98,18 @@ class App extends Component {
                         <Route exact path="/ourCoffee">
                             <OurCoffee></OurCoffee>
                             <AboutOurBeans></AboutOurBeans>
-                            <CardMenu></CardMenu>
+                            <SearchMenu
+                                onUpdateSearch={this.onUpdateSearch}
+                                onChangeEmployee={this.onChangeCountry}
+                                data={data}
+                            ></SearchMenu>
+                            <CardMenu data={visibleData}></CardMenu>
+                            <Footer></Footer>
+                        </Route>
+                        <Route exact path="/ourCoffee/aboutIt">
+                            <OurCoffee></OurCoffee>
+                            <AboutIt></AboutIt>
+                            <Footer></Footer>
                         </Route>
                         <Route exact path="/forYourPleasure"></Route>
                     </Switch>
