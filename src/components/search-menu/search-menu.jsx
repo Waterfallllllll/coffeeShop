@@ -6,9 +6,7 @@ class SearchMenu extends Component {
         super(props);
         this.state = {
             data: this.props.data,
-            classNamesBrazil: "cardMenu__buttonFilter",
-            classNamesKenya: "cardMenu__buttonFilter",
-            classNamesColumbia: "cardMenu__buttonFilter",
+            selectedCountry: null,
         };
     }
 
@@ -18,55 +16,18 @@ class SearchMenu extends Component {
         this.props.onUpdateSearch(term);
     };
 
-    onBrazil = () => {
-        const data = this.state.data;
+    onFilterClick = (country) => {
+        const { selectedCountry, data } = this.state;
 
-        this.setState({
-            classNamesBrazil:
-                "cardMenu__buttonFilter cardMenu__buttonFilter--active",
-            classNamesKenya: "cardMenu__buttonFilter",
-            classNamesColumbia: "cardMenu__buttonFilter",
-        });
+        const newSelected = selectedCountry === country ? null : country;
 
-        const newData = data.filter((item) => {
-            return item.country == "Brazil";
-        });
+        this.setState({ selectedCountry: newSelected });
 
-        this.props.onChangeEmployee(newData);
-    };
+        const filteredData = newSelected
+            ? data.filter((item) => item.country === newSelected)
+            : data;
 
-    onKenya = () => {
-        const data = this.state.data;
-
-        this.setState({
-            classNamesBrazil: "cardMenu__buttonFilter",
-            classNamesKenya:
-                "cardMenu__buttonFilter cardMenu__buttonFilter--active",
-            classNamesColumbia: "cardMenu__buttonFilter",
-        });
-
-        const newData = data.filter((item) => {
-            return item.country == "Kenya";
-        });
-
-        this.props.onChangeEmployee(newData);
-    };
-
-    onColumbia = () => {
-        const data = this.state.data;
-
-        this.setState({
-            classNamesBrazil: "cardMenu__buttonFilter",
-            classNamesKenya: "cardMenu__buttonFilter",
-            classNamesColumbia:
-                "cardMenu__buttonFilter cardMenu__buttonFilter--active",
-        });
-
-        const newData = data.filter((item) => {
-            return item.country == "Columbia";
-        });
-
-        this.props.onChangeEmployee(newData);
+        this.props.onChangeEmployee(filteredData);
     };
 
     render() {
@@ -85,20 +46,32 @@ class SearchMenu extends Component {
                     <div className="cardMenu__choiseMenu">
                         <div className="cardMenu__text">Or filter</div>
                         <button
-                            className={this.state.classNamesBrazil}
-                            onClick={this.onBrazil}
+                            className={`cardMenu__buttonFilter ${
+                                this.state.selectedCountry === "Brazil"
+                                    ? "cardMenu__buttonFilter--active"
+                                    : ""
+                            }`}
+                            onClick={() => this.onFilterClick("Brazil")}
                         >
                             Brazil
                         </button>
                         <button
-                            className={this.state.classNamesKenya}
-                            onClick={this.onKenya}
+                            className={`cardMenu__buttonFilter ${
+                                this.state.selectedCountry === "Kenya"
+                                    ? "cardMenu__buttonFilter--active"
+                                    : ""
+                            }`}
+                            onClick={() => this.onFilterClick("Kenya")}
                         >
                             Kenya
                         </button>
                         <button
-                            className={this.state.classNamesColumbia}
-                            onClick={this.onColumbia}
+                            className={`cardMenu__buttonFilter ${
+                                this.state.selectedCountry === "Columbia"
+                                    ? "cardMenu__buttonFilter--active"
+                                    : ""
+                            }`}
+                            onClick={() => this.onFilterClick("Columbia")}
                         >
                             Columbia
                         </button>

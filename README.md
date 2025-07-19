@@ -1,12 +1,36 @@
-# React + Vite
+# Coffee Shop
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Coffee Shop is a React application built with Vite and React Router. It simulates an online coffee store and is designed for learning and demonstrating core React concepts such as routing, component structure, styling with SASS, and state management.
 
-Currently, two official plugins are available:
+## Technologies
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+React 19 – component-based architecture and modern rendering
 
-## Expanding the ESLint configuration
+React Router v5 – page-to-page navigation
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+SASS – modular styling with SCSS
+
+Vite – fast and modern build tool
+
+ESLint – linting setup for clean, consistent code
+
+## Project Structure
+
+The project includes:
+
+A homepage with featured products
+
+A coffee product catalog
+
+Individual product description pages
+
+Basic search and filtering functionality
+
+## Installation & Run
+
+npm install
+npm run dev
+
+## Project Goal
+
+This project was created for educational purposes. It helps reinforce knowledge of React components, routing, props usage, BEM-style CSS, and basic dynamic UI behavior.

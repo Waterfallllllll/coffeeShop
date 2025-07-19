@@ -14,6 +14,8 @@ import AboutOurBeans from "../about-our-beans/about-our-beans";
 import SearchMenu from "../search-menu/search-menu";
 import CardMenu from "../card-menu/card-menu";
 import AboutIt from "../about-it/about-it";
+import ForYourPleasure from "../for-your-pleasure/for-your-pleasure";
+import AboutOurGoods from "../about-our-goods/about-our-goods";
 
 import "./app.scss";
 
@@ -111,7 +113,12 @@ class App extends Component {
                             <AboutIt></AboutIt>
                             <Footer></Footer>
                         </Route>
-                        <Route exact path="/forYourPleasure"></Route>
+                        <Route exact path="/forYourPleasure">
+                            <ForYourPleasure></ForYourPleasure>
+                            <AboutOurGoods></AboutOurGoods>
+                            <CardMenu data={visibleData}></CardMenu>
+                            <Footer></Footer>
+                        </Route>
                     </Switch>
                 </div>
             </Router>
